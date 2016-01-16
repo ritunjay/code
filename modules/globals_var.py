@@ -16,6 +16,27 @@ print globals()
 ### ** ###'i': 1, 'fun': <function fun at 0x7f5bf0be2f50>, 
 # }
 
+del i
+print globals()
+#{'__builtins__': <module '__builtin__' (built-in)>, 
+#'__file__': '/home/user/workspace/code/modules/globals_var.py', 
+#'__package__': None, 
+#'fun': <function fun at 0x7fc38ea73f50>, 
+#'__name__': '__main__', '__doc__': '\nInfo about this doc\n'}
+del fun
+print globals()
+#{'__builtins__': <module '__builtin__' (built-in)>, 
+#'__file__': '/home/user/workspace/code/modules/globals_var.py', 
+#'__package__': None, '__name__': '__main__', 
+#'__doc__': '\nInfo about this doc\n'}
+
+
+
+
+
+
+
+
 #### __builtins__
 dir(globals()['__builtins__'])
 #['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 
