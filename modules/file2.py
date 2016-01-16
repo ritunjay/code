@@ -9,3 +9,5 @@ fun()  #Inside file 1 > fun method
 #If from module import * Means all imported directly
 from file3 import *
 fun_file_3() #Inside file 3 > fun_file_3 function 
+
+print "In File 2 __name__ ", __name__ ##  __main__ because python file2.py 
