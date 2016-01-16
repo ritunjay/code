@@ -1,2 +1,15 @@
 http://www.tutorialspoint.com/python/python_modules.htm
 Created module folder, run file2 , and see how file1, file2 , file3 methods callled
+>> Order in which module searched 
+    1) Current Directory 
+    2) PYTHONPATH
+    3) If all fails :  /usr/local/lib/python/
+    One can see sys.path for odrder
+   ['', '/home/user/ankit_env/lib/python2.7', '/home/user/ankit_env/lib/python2.7/plat-x86_64-linux-gnu', '/home/user/ankit_env/lib/python2.7/lib-tk', '/home/user/ankit_env/lib/python2.7/lib-old', '/home/user/ankit_env/lib/python2.7/lib-dynload', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', '/home/user/ankit_env/local/lib/python2.7/site-packages', '/home/user/ankit_env/lib/python2.7/site-packages']
+set PYTHONPATH=/usr/local/lib/python
+>>globals .. globals_var.py : Globally available
+	__builtins__  => in globals_var.py see how builtins.html is created. 
+	__name__ => If same module is called by python mod_name.py , than name will be __main__ else module name 
+	__file__ => File name
+	__doc__  => For module first string in file. 
+	__package__ : If not package module (folder with __init__) , its empty
